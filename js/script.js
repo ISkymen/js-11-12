@@ -62,11 +62,23 @@ xmlhttp.onreadystatechange = function () {
   }
 };
 
-xmlhttp.open("GET", url, true);
+xmlhttp.open("GET", url, false);
 xmlhttp.send();
 
 // Parse JSON from localStorage (get Questions object)
 var pageQuestions = JSON.parse(localStorage.getItem("Questions"));
+
+// Main function for generate start page
+function displayPage() {
+  var pageQuestions = JSON.parse(localStorage.getItem("Questions"));
+  console.log(pageQuestions);
+  document.body.innerHTML = '<div id="myModal" class="modal"><div class="modal-content"><div class="modal-header"><span class="close">×</span><h2>Результаты теста</h2></div><div class="modal-body"></div><div class="modal-footer"><button id="start" type="button" class="button">Начать тест сначала</button></div></div>';
+  page.Title("Тест по программированию");
+  page.Question(pageQuestions);
+  page.Button("Проверить мои результаты");
+}
+
+displayPage();
 
 // Generate array with correct answers codes
 var checkArray = [];
@@ -76,16 +88,6 @@ for (var i = 0; i < pageQuestions.length; i++) {
     checkArray[i] += pageQuestions[i].answers[j].substr(0, 1);
   }
 }
-
-// Main function for generate start page
-function displayPage() {
-  document.body.innerHTML = '<div id="myModal" class="modal"><div class="modal-content"><div class="modal-header"><span class="close">×</span><h2>Результаты теста</h2></div><div class="modal-body"></div><div class="modal-footer"><button id="start" type="button" class="button">Начать тест сначала</button></div></div>';
-  page.Title("Тест по программированию");
-  page.Question(pageQuestions);
-  page.Button("Проверить мои результаты");
-}
-
-displayPage();
 
 // Function for check correct answers
 function check() {

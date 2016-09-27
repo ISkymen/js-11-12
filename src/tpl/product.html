@@ -1,0 +1,11 @@
+<div class="products">
+    {% for key in barcode %}
+    <div class="product">
+        <img class="prodimage" src="{{ image[loop.index0] }}" alt="">
+        <div class="info">
+            <div class="barcode">{{ barcode[loop.index0] }}</div>
+            <div class="name">{{ name[loop.index0] }}</div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

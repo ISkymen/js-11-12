@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Document</title>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <h2>jQuery jcarousel plugin</h2>
+  <div class="my_jcarousel">
+    <div class="jcarousel-prev">‹</div>
+    <div class="jcarousel_hider">
+      <ul class="jcarousel_list">
+        <li class="jcarousel_element"><img src="images/01.jpg" alt=""><p>Фото 1</p></li>
+        <li class="jcarousel_element"><img src="images/02.jpg" alt=""><p>Фото 2</p></li>
+        <li class="jcarousel_element"><img src="images/03.jpg" alt=""><p>Фото 3</p></li>
+        <li class="jcarousel_element"><img src="images/04.jpg" alt=""><p>Фото 4</p></li>
+        <li class="jcarousel_element"><img src="images/05.jpg" alt=""><p>Фото 5</p></li>
+      </ul>
+    </div>
+    <div class="jcarousel-next">›</div>
+  </div>
+
+  <h2>Twig.js gulp template</h2>
+  <div class="products">
+        <div class="product">
+        <img class="prodimage" src="http://dobavkam.net/sites/dobavkam.net/files/styles/m/public/products/ikra_treski.jpg?itok=W67d_hbr" alt="">
+        <div class="info">
+            <div class="barcode">4810168024260</div>
+            <div class="name">Икра трески «Санта Бремор»</div>
+        </div>
+    </div>
+        <div class="product">
+        <img class="prodimage" src="http://dobavkam.net/sites/dobavkam.net/files/styles/m/public/products/syr_vershkoviy_klub_syru.jpg?itok=UcvxOILo" alt="">
+        <div class="info">
+            <div class="barcode">4820149822464</div>
+            <div class="name">Сыр «Сливочный» ТМ «Клуб сыра»</div>
+        </div>
+    </div>
+        <div class="product">
+        <img class="prodimage" src="http://dobavkam.net/sites/dobavkam.net/files/styles/m/public/products/cider_ciber.jpg?itok=FCvOOqNL" alt="">
+        <div class="info">
+            <div class="barcode">4820002711218</div>
+            <div class="name">Сидр «Сибер»</div>
+        </div>
+    </div>
+        <div class="product">
+        <img class="prodimage" src="http://dobavkam.net/sites/dobavkam.net/files/styles/m/public/products/smetana_yagotinska_21.jpg?itok=dn5ttbHx" alt="">
+        <div class="info">
+            <div class="barcode">4823005204022</div>
+            <div class="name">Сметана «Яготинская» 21% жира</div>
+        </div>
+    </div>
+    </div>
+  <h2>John Resig's Template</h2>
+  <script type="text/html" id="myTemplate">
+      <h3 class="profile"><%= fullName %></h3>
+      <p class="profile"><%= profession %></p>
+      <div class="line-block"></div>
+      <h3>Изучаю фронтенд для:</h3>
+      <ul>
+        <% for (i = 0; i< answers.length; i++) { %>
+          <li><%= answers[i].answer %></li>
+        <% } %>
+      </ul>
+      <div class="line-block"></div>
+      <h3>Мой контактный телефон</h3>
+      <p><%= phoneNumber %></p>
+  </script>
+
+
+
+</div>
+</body>
+</html>

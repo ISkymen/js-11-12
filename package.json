@@ -19,6 +19,7 @@
       "gulp-jasmine": "^2.4.1",
       "gulp-twig": "^0.5.0",
       "gulp-plumber": "^1.1.0",
-      "gulp-concat": "^2.6.0"
+      "gulp-concat": "^2.6.0",
+      "xmlhttprequest": "^1.8.0"
    }
 }

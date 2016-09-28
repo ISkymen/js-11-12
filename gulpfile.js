@@ -95,11 +95,9 @@ var data = function () {
             image: prodImage
         }
     };
-//console.log(templateData);
+
     return templateData;
 };
-
-//console.log(data());
 
 // ********************** MY CODE *****************************
 
